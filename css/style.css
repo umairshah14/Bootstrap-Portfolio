@@ -1,0 +1,59 @@
+/* BREAKPOINTS FOR RESPONSIVE PAGES 
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } 
+*/
+
+.titleName{
+    color: white;
+}
+
+
+.navRight{
+    justify-content: right;
+}
+
+.navbar-toggler-icon{
+    display: flex;
+    justify-content: right;
+}
+
+.collapse-center{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand a{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size:10px;
+    }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
