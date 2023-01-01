@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root{
+    --color-primary-1: #333333;
+    --header-color: #D1D4DF;
+    --brand-color: #394B59;
+    --font-base: "Rubik";
+}
+
+body{
+    background-color: var(--header-color);
+    color: var(--color-primary-1);
+    font-family:var(--font-base) ;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-primary-1);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primary-1);
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: var(--color-primary-1);
+}
+
+img{
+    width: 100%;
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.106);
+}
+
+.navbar{
+    background-color: var(--color-primary-1);
+}
+.navbar navbar-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+}
+
+.nav-item{
+    font-size: 30px;
+}
+.navbar navbar-link:hover{
+    color: red;
+}
+
+@media (min-width: 992px){
+    .navbar {
+        min-height: 100vh;
+        width: 20vw;
+        background-color: var(--color-primary-1);
+        
+    }
+
+    .navbar-brand img{
+        border: 4px solid var(--header-color);
+    }
+
+    #content-wrapper {
+        padding-left: 20vw;
+    }
+}
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: white;
+    border-color: white;
+}
+
+.btn-brand:hover
+.btn-brand:focus{
+    background-color: black;
+}
+
+#wrap {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  overflow: hidden;
+}
+
+#scaled-frame {
+  width: fit-content;
+  height: fit-content;
+  border: 0px;
+}
+
+#scaled-frame {
+  zoom: 0.5;
+  -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.5);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #scaled-frame {
+    zoom: 1;
+  }
+}
